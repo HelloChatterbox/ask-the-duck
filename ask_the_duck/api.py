@@ -48,6 +48,7 @@ class DDG:
         # (primitive intent parsing)
         selected, key = match_infobox_field(query)
         if key:
+            selected = extract_keyword(selected)
             infobox = self.get_infobox(selected, raw=True) or {}
             answer = infobox.get(key)
             if answer:

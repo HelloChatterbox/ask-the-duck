@@ -6,6 +6,14 @@ python library to interact with DuckDuckGo api
 - language support via automatic translation
 - infobox parsing
 
+## Install
+
+```bash
+pip install ask-the-duck
+```
+
+## Usage
+
 ```python
 from ask_the_duck import DDG
 
