@@ -1,0 +1,6 @@
+requests
+requests_cache
+google_trans_new
+quebra_frases
+RAKEkeywords
+simplematch
