@@ -1,6 +1,6 @@
 # Ask the Duck
 
-python library to interact with DuckDuckGo api
+python library to interact with [DuckDuckGo API](https://duckduckgo.com/api)
 
 - natural language queries
 - language support via automatic translation
