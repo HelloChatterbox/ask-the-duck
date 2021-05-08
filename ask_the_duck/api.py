@@ -49,7 +49,7 @@ class DDG:
         selected, key = match_infobox_field(query)
         if key:
             selected = extract_keyword(selected)
-            infobox = self.get_infobox(selected, raw=True) or {}
+            infobox = self.get_infobox(selected, raw=True)[0] or {}
             answer = infobox.get(key)
             if answer:
                 return answer
