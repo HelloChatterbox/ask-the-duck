@@ -11,9 +11,12 @@ class DDG:
         if self.lang != "en":
             # translate input to English
             query = Translator.translate(query, "en", self.lang)
-        data = SESSION.get("https://api.duckduckgo.com",
-                           params={"format": "json",
-                                   "q": query}).json()
+        try:
+            data = SESSION.get("https://api.duckduckgo.com",
+                               params={"format": "json",
+                                       "q": query}).json()
+        except:
+            return {}
         if self.lang != "en" and not raw:
             # translate output to self.lang
             return Translator.translate_dict(data, self.lang, "en")

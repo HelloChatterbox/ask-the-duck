@@ -77,6 +77,8 @@ def extract_keyword(query):
     else:
         # let's try to extract the best keyword and use it as query
         kwords = rake_keywords(query)
+        if not kwords:
+            return None
         match = kwords[0][0]
     return match
 
